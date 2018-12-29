@@ -15,7 +15,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  dio:  ^1.0.13
+  shared_preferences: ^0.4.3
+  flutter_swiper: ^1.1.4
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
@@ -35,6 +37,21 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - assets/images/login_bg.png
+    - assets/images/src_assets_image_icon_logo.png
+    - assets/images/home_icon.png
+    - assets/images/home_icon_blue.png
+    - assets/images/work_icon.png
+    - assets/images/work_icon_blue.png
+    - assets/images/message_icon.png
+    - assets/images/message_icon_blue.png
+    - assets/images/oneself_icon.png
+    - assets/images/oneself_icon_blue.png
+    - assets/images/home_banner1.png
+    - assets/images/home_banner2.png
+    - assets/images/home_banner3.png
+    - assets/images/work_banner.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
