@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../http/HttpUtils.dart';
 import '../http/HttpContants.dart';
-import '../view/Toast.dart';
+import '../view/toast.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage({Key key, this.title}) : super(key: key);
