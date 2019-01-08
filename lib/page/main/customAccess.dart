@@ -5,6 +5,10 @@ import 'package:flutter_app/view/line.dart';
 import 'package:flutter_app/view/echarts.dart';
 
 class CustomAccess extends StatelessWidget {
+  CustomAccess(this.data);
+
+  final Map data;
+
   @override
   Widget build(BuildContext context) {
     return Tip(title: '客户接入量',
@@ -27,7 +31,7 @@ class CustomAccess extends StatelessWidget {
                           Tag(title: '当月新签客户', value: '18', unit: '户')
                         ])),
                 Line(height: 1.0, color: Colors.black12),
-                //Echarts(),
+                EchartView(height: 280, data: data),
               ],
             ),
           ),
