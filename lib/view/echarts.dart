@@ -23,7 +23,6 @@ class Echarts extends StatefulWidget {
   Echarts({this.data, this.child});
 
   final Widget child;
-  +  
 
   final Map data;
 
