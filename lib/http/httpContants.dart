@@ -7,4 +7,10 @@ class HttpContants {
   static String FAR_POWER_REFRESH_TOKEN = "$TEST_HOST/platform/refresh_token"; //登录接口
   static String FAR_POWER_USER_INFO = "$TEST_HOST/platform/personal/data"; //我的信息查询接口
   static String FAR_POWER_UPDATE_PASSWORD = "$TEST_HOST/platform/account/updatePassword"; //修改密码接口
+
+  static String  FAR_POWER_HOME_CUSTOMERACCESS = "$TEST_HOST/muztagata/app/main/customerAccess";//客户接入量
+
+
+
+
 }

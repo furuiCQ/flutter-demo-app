@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/view/echarts.dart';
+import 'package:flutter_echart/flutter_echart.dart';
 
 class WorkPage extends StatelessWidget {
 

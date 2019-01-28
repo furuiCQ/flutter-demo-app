@@ -7,8 +7,34 @@ class HttpUtils {
   static const bool inProduction = const bool.fromEnvironment(
       "dart.vm.product");
 
-  static Future get() async {
-
+  static Future get(url, callBack,failCallBack,errorCallBack) async {
+    Dio dio = new Dio();
+    dio.options = new Options();
+    dio.options.method = 'GET';
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    dio.options.headers['Authorization'] = prefs.getString('token');
+    dio.options.contentType =
+        ContentType.parse("application/json; charset=utf-8");
+    if (!inProduction) {
+      print(url);
+    //  print(param);
+      print(dio.options.headers);
+    }
+    try {
+      Response response = await dio.get(url);
+      if (response.statusCode != 200) {
+        failCallBack(response.data['message']);
+      } else {
+        if (!inProduction) {
+          print(response);
+        }
+        callBack(response.data);
+      }
+    } catch (e) {
+      if (errorCallBack != null) {
+        errorCallBack(e);
+      }
+    }
   }
 
   static Future login(url, param, callBack, failCallBack, errorCallBack) async {

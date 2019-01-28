@@ -14,5 +14,8 @@
 <script>
     function test(value){    if(value!=undefined){        var myChart = echarts.init(document.getElementById("main"));myChart.setOption(value);}}
 </script>
+<script>
+    var opt='options';var myChart = echarts.init(document.getElementById("main"));if(opt!='options'){myChart.setOption(opt)};
+</script>
 <body>
 <html>

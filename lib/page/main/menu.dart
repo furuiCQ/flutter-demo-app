@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/view/menuItem.dart';
+import 'package:flutter_app/view/menu.dart';
 
 class Menu extends StatelessWidget {
   onTap() {
